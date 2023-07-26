@@ -1,0 +1,22 @@
+<div class="card my-2" *ngFor="let movie of movies">
+    <div class="card my-2" *ngFor="let movie of movies">
+        <div class="row">
+            <div class="col-3">
+                <img src="assets/img/{{movie.imageUrl}}" class="card-img">
+
+            </div>
+            <div class="col-9">
+                <div class="card-body">
+                    <div>
+                        <h5 class="card-title">
+                            <a href="">{{movie.title}}</a>
+                        </h5>
+                        <div class="p-card-text">
+                            {{movie.description}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
